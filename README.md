@@ -23,7 +23,7 @@ Keep in mind that all messages send on this network are in Dutch.
 
 |Branch|Live Version|Status|Note| Test Version |
 | --- | --- | --- | --- | --- |
-|Homey Pro|**[1.0.0](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|Stable| **[1.0.2](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
+|Homey Pro|**[1.0.0](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws)**|:white_check_mark:|Stable| **[1.0.3](https://homey.app/nl-nl/app/nl.lrvdlinden.rtl-nieuws/rtl-nieuws/test)** |
 
 
 ---
@@ -47,13 +47,15 @@ Keep in mind that all messages send on this network are in Dutch.
 
 ---
 ## Changelog
-- 1.0.0 (1 aug 2023) First Release
+- 1.0.3 (2 aug 2023) Fix app icon
+- 1.0.2 (2 aug 2023) Fix image token
 
 <details>
 <summary>More changelog</summary>
 <br><br>
 <pre>
-
+- 1.0.1 (2 aug 2023) Feed improvement
+- 1.0.0 (1 aug 2023) First Release
 
 </pre>
 </details>
