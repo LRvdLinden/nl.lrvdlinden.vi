@@ -1,24 +1,24 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
-  "id": "nl.lrvdlinden.rtl-nieuws",
-  "version": "1.1.0",
+  "id": "nl.lrvdlinden.vi",
+  "version": "1.0.3",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
     "local"
   ],
-  "brandColor": "#35a7d6",
+  "brandColor": "#1476C6",
   "name": {
-    "en": "RTL Nieuws",
-    "nl": "RTL Nieuws"
+    "en": "VI Nieuws",
+    "nl": "VI Nieuws"
   },
   "images": {
     "large": "/assets/images/large.jpg",
     "small": "/assets/images/small.jpg"
   },
   "description": {
-    "en": "Receive notifications for new articles, new RTL Nieuws video and new RTL Weather Video from RTL Nieuws.",
-    "nl": "Ontvang meldingen voor nieuwe artikelen, nieuw RTL Nieuws video en nieuw RTL Weer video van RTL Nieuws."
+    "en": "Receive notifications for new articles from VI.",
+    "nl": "Ontvang meldingen voor nieuwe artikelen van VI."
   },
   "category": "internet",
   "class": "rss",
@@ -29,7 +29,8 @@
       "nos",
       "nu.nl",
       "rss",
-      "weather"
+      "soccer",
+      "vi"
     ],
     "nl": [
       "internet",
@@ -37,7 +38,8 @@
       "nos",
       "nu.nl",
       "rss",
-      "weer"
+      "voetbal",
+      "vi"
     ]
   },
   "language": {
@@ -50,11 +52,6 @@
     "email": "homey@vdlinden.xyz"
   },
   "contributors": {
-    "developers": [
-      {
-        "name": "Martijn Poppen"
-      }
-    ],
     "translators": [
       {
         "name": "🇬🇧 Léon"
@@ -75,11 +72,11 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/app-pro-rtl-nieuws-for-homey/85531"
+    "url": "https://community.homey.app/t/app-pro-vi-nieuws/85738"
   },
   "homepage": "https://shor.by/LRvdLinden",
-  "support": "https://community.homey.app/t/pro-rtl-nieuws-for-homey/85531",
-  "homeyCommunityTopicId": 85531,
+  "support": "https://community.homey.app/t/app-pro-vi-nieuws/85738",
+  "homeyCommunityTopicId": 85738,
   "flow": {
     "triggers": [
       {
@@ -98,17 +95,17 @@
           "pl": "Nowy artykuł otrzymany"
         },
         "description": {
-          "en": "Triggered when a new article is received from RTL Nieuws.",
-          "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van RTL Nieuws.",
-          "de": "Ausgelöst, wenn ein neuer Artikel von RTL Nieuws empfangen wird.",
-          "fr": "Déclenché lorsqu'un nouvel article est reçu de RTL Nieuws.",
-          "it": "Attivato quando viene ricevuto un nuovo articolo da RTL Nieuws.",
-          "sv": "Aktiveras när en ny artikel tas emot från RTL Nieuws.",
-          "no": "Utløst når en ny artikkel mottas fra RTL Nieuws.",
-          "es": "Activado cuando se recibe un nuevo artículo de RTL Nieuws.",
-          "da": "Udløst, når en ny artikel modtages fra RTL Nieuws.",
-          "ru": "Срабатывает, когда поступает новая статья от RTL Nieuws.",
-          "pl": "Wyzwalane, gdy zostanie odebrany nowy artykuł z RTL Nieuws."
+          "en": "Triggered when a new article is received from VI.",
+          "nl": "Geactiveerd wanneer een nieuw artikel wordt ontvangen van VI.",
+          "de": "Ausgelöst, wenn ein neuer Artikel von VI empfangen wird.",
+          "fr": "Déclenché lorsqu'un nouvel article est reçu de VI.",
+          "it": "Attivato quando viene ricevuto un nuovo articolo da VI.",
+          "sv": "Aktiveras när en ny artikel tas emot från VI.",
+          "no": "Utløst når en ny artikkel mottas fra VI.",
+          "es": "Activado cuando se recibe un nuevo artículo de VI.",
+          "da": "Udløst, når en ny artikel modtages fra VI.",
+          "ru": "Срабатывает, когда поступает новая статья от VI.",
+          "pl": "Wyzwalane, gdy zostanie odebrany nowy artykuł z VI."
         },
         "tokens": [
           {
@@ -193,316 +190,6 @@
               "da": "Artikel Billede URL",
               "ru": "URL изображения статьи",
               "pl": "URL obrazu artykułu"
-            },
-            "type": "string"
-          }
-        ]
-      },
-      {
-        "id": "new_video_nieuws",
-        "title": {
-          "en": "New RTL Nieuws video received",
-          "nl": "Nieuwe RTL Nieuws video ontvangen",
-          "de": "Neues RTL Nieuws-Video empfangen",
-          "fr": "Nouvelle vidéo RTL Nieuws reçue",
-          "it": "Nuovo video RTL Nieuws ricevuto",
-          "sv": "Ny RTL Nieuws-video mottagen",
-          "no": "Ny RTL Nieuws-video mottatt",
-          "es": "Nuevo vídeo de RTL Nieuws recibido",
-          "da": "Ny RTL Nieuws-video modtaget",
-          "ru": "Получено новое видео RTL Nieuws",
-          "pl": "Otrzymano nowy film RTL Nieuws"
-        },
-        "description": {
-          "en": "Triggered when a new video from RTL Nieuws is received.",
-          "nl": "Geactiveerd wanneer een nieuwe video van RTL Nieuws wordt ontvangen.",
-          "de": "Ausgelöst, wenn ein neues Video von RTL Nieuws empfangen wird.",
-          "fr": "Déclenché lorsqu'une nouvelle vidéo de RTL Nieuws est reçue.",
-          "it": "Attivato quando viene ricevuto un nuovo video da RTL Nieuws.",
-          "sv": "Aktiveras när en ny video tas emot från RTL Nieuws.",
-          "no": "Utløst når en ny video fra RTL Nieuws mottas.",
-          "es": "Activado cuando se recibe un nuevo vídeo de RTL Nieuws.",
-          "da": "Udløst, når en ny video fra RTL Nieuws modtages.",
-          "ru": "Срабатывает, когда поступает новое видео от RTL Nieuws.",
-          "pl": "Wyzwalane, gdy otrzymano nowy film z RTL Nieuws."
-        },
-        "tokens": [
-          {
-            "name": "url",
-            "title": {
-              "en": "Video URL",
-              "nl": "Video URL",
-              "de": "Video-URL",
-              "fr": "URL de la vidéo",
-              "it": "URL del video",
-              "sv": "Video-URL",
-              "no": "Video-URL",
-              "es": "URL del vídeo",
-              "da": "Video-URL",
-              "ru": "URL видео",
-              "pl": "URL filmu"
-            },
-            "type": "string"
-          }
-        ]
-      },
-      {
-        "id": "new_video_weer",
-        "title": {
-          "en": "New RTL Weer video received",
-          "nl": "Nieuwe RTL Weer video ontvangen",
-          "de": "Neues RTL Weer-Video empfangen",
-          "fr": "Nouvelle vidéo RTL Weer reçue",
-          "it": "Nuovo video RTL Weer ricevuto",
-          "sv": "Ny RTL Weer-video mottagen",
-          "no": "Ny RTL Weer-video mottatt",
-          "es": "Nuevo vídeo de RTL Weer recibido",
-          "da": "Ny RTL Weer-video modtaget",
-          "ru": "Получено новое видео RTL Weer",
-          "pl": "Otrzymano nowy film RTL Weer"
-        },
-        "description": {
-          "en": "Triggered when a new video from RTL Weer is received.",
-          "nl": "Geactiveerd wanneer een nieuwe video van RTL Weer wordt ontvangen.",
-          "de": "Ausgelöst, wenn ein neues Video von RTL Weer empfangen wird.",
-          "fr": "Déclenché lorsqu'une nouvelle vidéo de RTL Weer est reçue.",
-          "it": "Attivato quando viene ricevuto un nuovo video da RTL Weer.",
-          "sv": "Aktiveras när en ny video tas emot från RTL Weer.",
-          "no": "Utløst når en ny video fra RTL Weer mottas.",
-          "es": "Activado cuando se recibe un nuevo vídeo de RTL Weer.",
-          "da": "Udløst, når en ny video fra RTL Weer modtages.",
-          "ru": "Срабатывает, когда поступает новое видео от RTL Weer.",
-          "pl": "Wyzwalane, gdy otrzymano nowy film z RTL Weer."
-        },
-        "tokens": [
-          {
-            "name": "url",
-            "title": {
-              "en": "Video URL",
-              "nl": "Video URL",
-              "de": "Video-URL",
-              "fr": "URL de la vidéo",
-              "it": "URL del video",
-              "sv": "Video-URL",
-              "no": "Video-URL",
-              "es": "URL del vídeo",
-              "da": "Video-URL",
-              "ru": "URL видео",
-              "pl": "URL filmu"
-            },
-            "type": "string"
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "id": "there_is_article",
-        "title": {
-          "en": "There is a Article",
-          "nl": "Er is een artikel",
-          "de": "Es gibt einen Artikel",
-          "fr": "Il y a un article",
-          "it": "C'è un articolo",
-          "sv": "Det finns en artikel",
-          "no": "Det er en artikkel",
-          "es": "Hay un artículo",
-          "da": "Der er en artikel",
-          "ru": "Есть статья",
-          "pl": "Istnieje artykuł"
-        },
-        "description": {
-          "en": "Triggered when there is a new article from RTL Nieuws.",
-          "nl": "Geactiveerd wanneer er een nieuw artikel is van RTL Nieuws.",
-          "de": "Ausgelöst, wenn es einen neuen Artikel von RTL Nieuws gibt.",
-          "fr": "Déclenché lorsqu'il y a un nouvel article de RTL Nieuws.",
-          "it": "Attivato quando c'è un nuovo articolo da RTL Nieuws.",
-          "sv": "Aktiveras när det finns en ny artikel från RTL Nieuws.",
-          "no": "Utløst når det er en ny artikkel fra RTL Nieuws.",
-          "es": "Activado cuando hay un nuevo artículo de RTL Nieuws.",
-          "da": "Udløst, når der er en ny artikel fra RTL Nieuws.",
-          "ru": "Срабатывает, когда есть новая статья от RTL Nieuws.",
-          "pl": "Wyzwalane, gdy istnieje nowy artykuł z RTL Nieuws."
-        },
-        "tokens": [
-          {
-            "name": "title",
-            "title": {
-              "en": "Article Title",
-              "nl": "Artikel Titel",
-              "de": "Artikel Titel",
-              "fr": "Titre de l'article",
-              "it": "Titolo dell'articolo",
-              "sv": "Artikeltitel",
-              "no": "Artikkel tittel",
-              "es": "Título del artículo",
-              "da": "Artikel titel",
-              "ru": "Заголовок статьи",
-              "pl": "Tytuł artykułu"
-            },
-            "type": "string"
-          },
-          {
-            "name": "link",
-            "title": {
-              "en": "Article URL",
-              "nl": "Artikel URL",
-              "de": "Artikel-URL",
-              "fr": "URL de l'article",
-              "it": "URL dell'articolo",
-              "sv": "Artikel-URL",
-              "no": "Artikkel-URL",
-              "es": "URL del artículo",
-              "da": "Artikel-URL",
-              "ru": "URL статьи",
-              "pl": "URL artykułu"
-            },
-            "type": "string"
-          },
-          {
-            "name": "content",
-            "title": {
-              "en": "Article Description",
-              "nl": "Artikel Omschrijving",
-              "de": "Artikelbeschreibung",
-              "fr": "Description de l'article",
-              "it": "Descrizione dell'articolo",
-              "sv": "Artikelbeskrivning",
-              "no": "Artikkelbeskrivelse",
-              "es": "Descripción del artículo",
-              "da": "Artikelbeskrivelse",
-              "ru": "Описание статьи",
-              "pl": "Opis artykułu"
-            },
-            "type": "string"
-          },
-          {
-            "name": "pubDate",
-            "title": {
-              "en": "Article Publication Date",
-              "nl": "Artikel Publicatiedatum",
-              "de": "Artikel Veröffentlichungsdatum",
-              "fr": "Date de publication de l'article",
-              "it": "Data di pubblicazione dell'articolo",
-              "sv": "Artikel Publiceringsdatum",
-              "no": "Artikkel Publikasjonsdato",
-              "es": "Fecha de publicación del artículo",
-              "da": "Artikel Udgivelsesdato",
-              "ru": "Дата публикации статьи",
-              "pl": "Data publikacji artykułu"
-            },
-            "type": "string"
-          },
-          {
-            "name": "imageUrl",
-            "title": {
-              "en": "Article Image URL",
-              "nl": "Artikel Afbeelding URL",
-              "de": "Artikelbild-URL",
-              "fr": "URL de l'image de l'article",
-              "it": "URL dell'immagine dell'articolo",
-              "sv": "Artikelbild-URL",
-              "no": "Artikkelbilde-URL",
-              "es": "URL de la imagen del artículo",
-              "da": "Artikel Billede URL",
-              "ru": "URL изображения статьи",
-              "pl": "URL obrazu artykułu"
-            },
-            "type": "string"
-          }
-        ]
-      },
-      {
-        "id": "there_is_rtl_nieuws_video",
-        "title": {
-          "en": "There is a RTL Nieuws video",
-          "nl": "Er is een RTL Nieuws video",
-          "de": "Es gibt ein RTL Nieuws-Video",
-          "fr": "Il y a une vidéo de RTL Nieuws",
-          "it": "C'è un video di RTL Nieuws",
-          "sv": "Det finns en RTL Nieuws-video",
-          "no": "Det er en video fra RTL Nieuws",
-          "es": "Hay un video de RTL Nieuws",
-          "da": "Der er en video fra RTL Nieuws",
-          "ru": "Есть видео от RTL Nieuws",
-          "pl": "Istnieje film z RTL Nieuws"
-        },
-        "description": {
-          "en": "Triggered when there is a new video from RTL Nieuws.",
-          "nl": "Geactiveerd wanneer er een nieuwe video is van RTL Nieuws.",
-          "de": "Ausgelöst, wenn es ein neues Video von RTL Nieuws gibt.",
-          "fr": "Déclenché lorsqu'il y a une nouvelle vidéo de RTL Nieuws.",
-          "it": "Attivato quando c'è un nuovo video da RTL Nieuws.",
-          "sv": "Aktiveras när det finns en ny video från RTL Nieuws.",
-          "no": "Utløst når det er en ny video fra RTL Nieuws.",
-          "es": "Activado cuando hay un nuevo video de RTL Nieuws.",
-          "da": "Udløst, når der er en ny video fra RTL Nieuws.",
-          "ru": "Срабатывает, когда есть новое видео от RTL Nieuws.",
-          "pl": "Wyzwalane, gdy istnieje nowy film z RTL Nieuws."
-        },
-        "tokens": [
-          {
-            "name": "url",
-            "title": {
-              "en": "Video URL",
-              "nl": "Video URL",
-              "de": "Video-URL",
-              "fr": "URL de la vidéo",
-              "it": "URL del video",
-              "sv": "Video-URL",
-              "no": "Video-URL",
-              "es": "URL del video",
-              "da": "Video-URL",
-              "ru": "URL видео",
-              "pl": "URL filmu"
-            },
-            "type": "string"
-          }
-        ]
-      },
-      {
-        "id": "there_is_rtl_weer_video",
-        "title": {
-          "en": "There is a RTL Weer video",
-          "nl": "Er is een RTL Weer video",
-          "de": "Es gibt ein RTL Weer-Video",
-          "fr": "Il y a une vidéo de RTL Weer",
-          "it": "C'è un video di RTL Weer",
-          "sv": "Det finns en RTL Weer-video",
-          "no": "Det er en video fra RTL Weer",
-          "es": "Hay un video de RTL Weer",
-          "da": "Der er en video fra RTL Weer",
-          "ru": "Есть видео от RTL Weer",
-          "pl": "Istnieje film z RTL Weer"
-        },
-        "description": {
-          "en": "Triggered when there is a new video from RTL Weer.",
-          "nl": "Geactiveerd wanneer er een nieuwe video is van RTL Weer.",
-          "de": "Ausgelöst, wenn es ein neues Video von RTL Weer gibt.",
-          "fr": "Déclenché lorsqu'il y a une nouvelle vidéo de RTL Weer.",
-          "it": "Attivato quando c'è un nuovo video da RTL Weer.",
-          "sv": "Aktiveras när det finns en ny video från RTL Weer.",
-          "no": "Utløst når det er en ny video fra RTL Weer.",
-          "es": "Activado cuando hay un nuevo video de RTL Weer.",
-          "da": "Udløst, når der er en ny video fra RTL Weer.",
-          "ru": "Срабатывает, когда есть новое видео от RTL Weer.",
-          "pl": "Wyzwalane, gdy istnieje nowy film z RTL Weer."
-        },
-        "tokens": [
-          {
-            "name": "url",
-            "title": {
-              "en": "Video URL",
-              "nl": "Video URL",
-              "de": "Video-URL",
-              "fr": "URL de la vidéo",
-              "it": "URL del video",
-              "sv": "Video-URL",
-              "no": "Video-URL",
-              "es": "URL del video",
-              "da": "Video-URL",
-              "ru": "URL видео",
-              "pl": "URL filmu"
             },
             "type": "string"
           }
