@@ -14,5 +14,9 @@
   "1.0.3": {
  "en": "Fix app icon",
  "nl": "Fix app icon" 
+},
+"1.0.4": {
+  "en": "Feed improvement",
+  "nl": "Feed improvement"   
   }
 }
