@@ -1,6 +1,6 @@
 {
   "id": "nl.lrvdlinden.vi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": ["local"],
@@ -59,3 +59,4 @@
   "support": "https://community.homey.app/t/app-pro-vi-nieuws/85738",
   "homeyCommunityTopicId": 85738
 }
+
