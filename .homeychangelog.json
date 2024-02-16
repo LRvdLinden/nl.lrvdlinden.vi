@@ -1,0 +1,22 @@
+{
+  "1.0.0": {
+    "en": "First Release",
+    "nl": "Eerste Release"  
+  },
+   "1.0.1": {
+    "en": "Feed improvement",
+    "nl": "Feed improvement"   
+   },
+     "1.0.2": {
+    "en": "Fix image token",
+    "nl": "Fix image token" 
+  },
+  "1.0.3": {
+ "en": "Fix app icon",
+ "nl": "Fix app icon" 
+},
+"1.0.4": {
+  "en": "Feed improvement",
+  "nl": "Feed improvement"   
+  }
+}

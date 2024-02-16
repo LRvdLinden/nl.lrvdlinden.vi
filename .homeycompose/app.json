@@ -1,0 +1,61 @@
+{
+  "id": "nl.lrvdlinden.vi",
+  "version": "1.0.4",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "brandColor": "#1476C6",
+  "name": {
+    "en": "VI Nieuws",
+    "nl": "VI Nieuws"
+  },
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "description": {
+    "en": "Receive notifications for new articles from VI.",
+    "nl": "Ontvang meldingen voor nieuwe artikelen van VI."
+  },
+  "category": "internet",
+  "class": "rss",
+  "tags": {
+    "en": ["internet", "news", "nos", "nu.nl", "rss", "soccer", "vi"],
+    "nl": ["internet", "nieuws", "nos", "nu.nl", "rss", "voetbal", "vi"]
+  },
+  "language": {
+    "en": "en",
+    "nl": "nl"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Léon van der Linden",
+    "email": "homey@vdlinden.xyz"
+  },
+  "contributors": {
+    "translators": [
+      {
+        "name": "🇬🇧 Léon"
+      },
+      {
+        "name": "🇳🇱 Léon"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/app-pro-vi-nieuws/85738"
+  },
+  "homepage": "https://shor.by/LRvdLinden",
+  "support": "https://community.homey.app/t/app-pro-vi-nieuws/85738",
+  "homeyCommunityTopicId": 85738
+}
